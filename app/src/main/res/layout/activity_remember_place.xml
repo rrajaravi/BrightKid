@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RememberPlace">
+
+        <Button
+            android:id="@+id/replay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playAgain"
+            android:text="@string/play_again"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/hostLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/replay_btn"
+            app:rowCount="3">
+
+            <ImageView
+                android:id="@+id/imageView0"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="openImage"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="openImage"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="openImage"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="openImage"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="openImage"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="openImage"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
